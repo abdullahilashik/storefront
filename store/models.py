@@ -31,5 +31,5 @@ class Order(models.Model):
         ('F', 'Failed')
     ]
     payment_status = models.CharField(max_length=1, choices=PAYMENT_STATUS_CHOICES, default='P')
-    placed_at = models.DateTimeField(auto_now=True)
+    placed_at = models.DateTimeField(auto_now_add=True)
 
